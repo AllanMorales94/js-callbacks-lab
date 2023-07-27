@@ -68,6 +68,13 @@ function log(elem, idx) {
   console.log(`Index: ${idx} / Element Value: ${elem}`);
 }
 
+function forEach (arr, cb){
+for(let i = 0; i < arr.length; i++) {
+  cb(arr[i], i)
+  }
+}
+
+forEach(colors, log)
 // calling forEach(colors, log) should resulting in this output:
 // Index: 0 / Element Value: red
 // Index: 1 / Element Value: green
