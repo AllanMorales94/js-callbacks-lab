@@ -131,3 +131,8 @@ step1(function(){
     })
   })
 })
+
+
+// Bonus
+
+//Write function named countdown that accepts as an arg the starting number of seconds and console.logs the count down to zero one second apart from each other.
