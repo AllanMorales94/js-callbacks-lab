@@ -124,3 +124,10 @@ Hints:
 - You cannot call `step2` until after `step1` has "finished", similarly, you cannot call `step3` until `step2` has "finished".
 - You must console.log the last line of the output, `FINISHED`, after `step3` has "finished".
 */
+step1(function(){
+  step2(function(){
+    step3(function(){
+      console.log("finished")
+    })
+  })
+})
