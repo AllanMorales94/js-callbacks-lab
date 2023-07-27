@@ -44,7 +44,10 @@ words.sort(arrSort);
 // named longWords that includes only the words with 7 or more
 // characters
 
-const longWords = words.filter(/* write an anonymous inline function here */);
+const longWords = words.filter((word) => {
+  return word.length >= 7;
+});
 
 // Check that logging longWords outputs
 // ["lengthy", "delicious"]
+console.log(longWords)
