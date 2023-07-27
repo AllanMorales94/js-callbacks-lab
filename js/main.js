@@ -27,11 +27,14 @@ let timerId = setTimeout(writeDing, 3000);
 
 const words = ['short', 'medium', 'delicious', 'nice', 'lengthy'];
 
+function arrSort(a, b){
+return(a.length - b.length)
+}
 // The sort method sorts "in place", that is, it modifies the array
-words.sort(/* pass in a named callback here */);
+words.sort(arrSort);
 
 // Check that logging words now outputs
 // ["nice", "short", "medium", "lengthy", "delicious"]
-
+ console.log(words)
 
 
